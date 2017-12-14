@@ -1,13 +1,3 @@
-
-
-$('#add').click(function () {
-    var  x = Number($('#firstNumber').val());
-    var  y = Number($('#lastNumber').val());
-    var  result = x+y;
-    $('#reset').val(result);
-
-});
-
 $('#add').click(function () {
     var x = Number($('#firstNo').val());
     var y = Number($('#lastNo').val());
@@ -43,6 +33,14 @@ $('#div').click(function () {
     $('#result').val(result);
 
 });
+$('#remai').click(function () {
+    var x = Number($('#firstNo').val());
+    var y = Number($('#lastNo').val());
+    var result = x%y;
+
+    $('#result').val(result);
+
+});
 
 
 
@@ -58,7 +56,7 @@ $('#div').click(function () {
 
 
 
-
+//
 // $('#btn').click(function () {
 //     var  firstNameValue = $('#firstName').val();
 //     var  lastNameValue = $('#lastName').val();
@@ -98,45 +96,21 @@ $('#div').click(function () {
 //     // divOneElement.style.backgroundColor = 'white';
 //     divOneElement.className ='my-style';
 // };
+
+
+
+
+
+// var btnElement = document.getElementById('btn');
+// btnElement.onclick =function () {
+//    var  startingNumberValue = document.getElementById('startingNumber').value;
+//     var  endingNumberValue = document.getElementById('endingNumber').value;
 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var btnElement = document.getElementById('btn');
-btnElement.onclick =function () {
-   var  startingNumberValue = document.getElementById('startingNumber').value;
-    var  endingNumberValue = document.getElementById('endingNumber').value;
-
-    var res='';
-    for (var x=startingNumberValue; x<=endingNumberValue; x++){
-        // document.write(x+' ');
-        res+=x;//res=res(string)+x(string)=concate
-    }
-    document.getElementById('result').value = res;
-
-};
+//     var res='';
+//     for (var x=startingNumberValue; x<=endingNumberValue; x++){
+//         // document.write(x+' ');
+//         res+=x;//res=res(string)+x(string)=concate
+//     }
+//     document.getElementById('result').value = res;
+//
+// };
